@@ -42,8 +42,17 @@
     <Reference Include="Bunifu.UI.WinForms, Version=0.0.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL">
       <HintPath>..\packages\Bunifu.UI.WinForms.7.2.0\lib\net472\Bunifu.UI.WinForms.dll</HintPath>
     </Reference>
+    <Reference Include="Controls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Separator-Control.1.0.0\lib\net46\Controls.dll</HintPath>
+    </Reference>
     <Reference Include="Cyotek.Windows.Forms.ImageBox, Version=1.2.0.0, Culture=neutral, PublicKeyToken=58daa28b0b2de221, processorArchitecture=MSIL">
       <HintPath>..\packages\CyotekImageBox.1.3.1\lib\net20\Cyotek.Windows.Forms.ImageBox.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.7.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
@@ -88,6 +97,7 @@
       <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
     </Reference>
     <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -102,6 +112,24 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BROWSE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BROWSE.Designer.cs">
+      <DependentUpon>BROWSE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cart.Designer.cs">
+      <DependentUpon>Cart.cs</DependentUpon>
+    </Compile>
     <Compile Include="login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +150,34 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WishList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WishList.Designer.cs">
+      <DependentUpon>WishList.cs</DependentUpon>
+    </Compile>
+    <None Include="Resources\icons8-wishlist-58.png" />
+    <EmbeddedResource Include="WishList.resx">
+      <DependentUpon>WishList.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Resources\icons8-home-20.png" />
+    <None Include="Resources\Screenshot 2024-11-24 012736.png" />
+    <None Include="Resources\images.jpg" />
+    <None Include="Resources\light-purple-pink-gradient-blur-backdrop-vector.jpg" />
+    <None Include="Resources\menu_7689152%282%291.png" />
+    <None Include="Resources\Purple Blue Simple Daily Motivation Quote Instagram Post1.png" />
+    <None Include="Resources\Purple Modern Minimalist Business Development Presentation1.png" />
+    <None Include="Resources\example_browse_1.png" />
+    <None Include="Resources\example_browse.png" />
+    <None Include="Resources\icons8-cart-50%281%29.png" />
+    <None Include="Resources\icons8-cart-30.png" />
+    <None Include="Resources\icons8-search-50.png" />
+    <None Include="Resources\shopverse1.png" />
+    <None Include="Resources\shopverse-removebg-preview.png" />
+    <None Include="Resources\shopverse.png" />
+    <None Include="Resources\icons8-cart-24.png" />
+    <None Include="Resources\icons8-cart-50.png" />
+    <None Include="Resources\icons8-search-20.png" />
     <None Include="Resources\Gradient Minimalist Aesthetic Self Reminder Instagram Post1.png" />
     <None Include="Resources\Purple Modern Minimalist Business Development Presentation.png" />
     <None Include="Resources\menu_7689152%282%29.png" />
@@ -132,6 +188,15 @@
     <None Include="Resources\three-bar-line-menu-icon-white-neumorphism-soft-ui-design-for-web-design-application-ui-and-more-button-vector.jpg" />
     <None Include="Resources\list-symbol-of-three-items-with-dots.png" />
     <None Include="Resources\61d387f20082ce08d6a3c612_shopverse_img01.jpeg" />
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BROWSE.resx">
+      <DependentUpon>BROWSE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cart.resx">
+      <DependentUpon>Cart.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HomePage.resx">
       <DependentUpon>HomePage.cs</DependentUpon>
     </EmbeddedResource>
