@@ -26,5 +26,15 @@ namespace DB_PROJECT
         {
 
         }
+
+        private void checkShowPassword_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
