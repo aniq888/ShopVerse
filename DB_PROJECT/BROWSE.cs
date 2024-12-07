@@ -19,7 +19,7 @@ namespace DB_PROJECT
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            SearchtextBox.Width = 50;
+            //SearchtextBox.Width = 50;
         }
 
         private void BROWSE_Load(object sender, EventArgs e)

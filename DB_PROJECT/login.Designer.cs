@@ -37,6 +37,10 @@
             this.textUserName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.ShipperradioButton = new System.Windows.Forms.RadioButton();
+            this.AdminradioButton = new System.Windows.Forms.RadioButton();
+            this.CustomerradioButton = new System.Windows.Forms.RadioButton();
+            this.SellerradioButton = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // BackToRegister
@@ -67,24 +71,26 @@
             this.buttonLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonLogin.ForeColor = System.Drawing.Color.White;
-            this.buttonLogin.Location = new System.Drawing.Point(262, 394);
+            this.buttonLogin.Location = new System.Drawing.Point(262, 424);
             this.buttonLogin.Name = "buttonLogin";
             this.buttonLogin.Size = new System.Drawing.Size(150, 40);
             this.buttonLogin.TabIndex = 19;
             this.buttonLogin.Text = "Login";
             this.buttonLogin.UseVisualStyleBackColor = false;
+            this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
             // 
             // checkShowPassword
             // 
             this.checkShowPassword.AutoSize = true;
             this.checkShowPassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.checkShowPassword.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkShowPassword.Location = new System.Drawing.Point(299, 353);
+            this.checkShowPassword.Location = new System.Drawing.Point(266, 345);
             this.checkShowPassword.Name = "checkShowPassword";
             this.checkShowPassword.Size = new System.Drawing.Size(143, 25);
             this.checkShowPassword.TabIndex = 18;
             this.checkShowPassword.Text = "Show Password";
             this.checkShowPassword.UseVisualStyleBackColor = true;
+            this.checkShowPassword.CheckedChanged += new System.EventHandler(this.checkShowPassword_CheckedChanged);
             // 
             // textpassword
             // 
@@ -139,11 +145,59 @@
             this.label1.TabIndex = 11;
             this.label1.Text = "Get Started";
             // 
-            // Form1
+            // ShipperradioButton
+            // 
+            this.ShipperradioButton.AutoSize = true;
+            this.ShipperradioButton.Location = new System.Drawing.Point(433, 386);
+            this.ShipperradioButton.Name = "ShipperradioButton";
+            this.ShipperradioButton.Size = new System.Drawing.Size(71, 21);
+            this.ShipperradioButton.TabIndex = 25;
+            this.ShipperradioButton.TabStop = true;
+            this.ShipperradioButton.Text = "Shipper";
+            this.ShipperradioButton.UseVisualStyleBackColor = true;
+            // 
+            // AdminradioButton
+            // 
+            this.AdminradioButton.AutoSize = true;
+            this.AdminradioButton.Location = new System.Drawing.Point(349, 386);
+            this.AdminradioButton.Name = "AdminradioButton";
+            this.AdminradioButton.Size = new System.Drawing.Size(63, 21);
+            this.AdminradioButton.TabIndex = 24;
+            this.AdminradioButton.TabStop = true;
+            this.AdminradioButton.Text = "Admin";
+            this.AdminradioButton.UseVisualStyleBackColor = true;
+            // 
+            // CustomerradioButton
+            // 
+            this.CustomerradioButton.AutoSize = true;
+            this.CustomerradioButton.Location = new System.Drawing.Point(247, 386);
+            this.CustomerradioButton.Name = "CustomerradioButton";
+            this.CustomerradioButton.Size = new System.Drawing.Size(82, 21);
+            this.CustomerradioButton.TabIndex = 23;
+            this.CustomerradioButton.TabStop = true;
+            this.CustomerradioButton.Text = "Customer";
+            this.CustomerradioButton.UseVisualStyleBackColor = true;
+            // 
+            // SellerradioButton
+            // 
+            this.SellerradioButton.AutoSize = true;
+            this.SellerradioButton.Location = new System.Drawing.Point(185, 386);
+            this.SellerradioButton.Name = "SellerradioButton";
+            this.SellerradioButton.Size = new System.Drawing.Size(58, 21);
+            this.SellerradioButton.TabIndex = 22;
+            this.SellerradioButton.TabStop = true;
+            this.SellerradioButton.Text = "Seller";
+            this.SellerradioButton.UseVisualStyleBackColor = true;
+            // 
+            // login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(681, 733);
+            this.Controls.Add(this.ShipperradioButton);
+            this.Controls.Add(this.AdminradioButton);
+            this.Controls.Add(this.CustomerradioButton);
+            this.Controls.Add(this.SellerradioButton);
             this.Controls.Add(this.BackToRegister);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.buttonLogin);
@@ -157,9 +211,10 @@
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(165)))), ((int)(((byte)(169)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Name = "Form1";
+            this.Name = "login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -176,5 +231,9 @@
         private System.Windows.Forms.TextBox textUserName;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.RadioButton ShipperradioButton;
+        private System.Windows.Forms.RadioButton AdminradioButton;
+        private System.Windows.Forms.RadioButton CustomerradioButton;
+        private System.Windows.Forms.RadioButton SellerradioButton;
     }
 }

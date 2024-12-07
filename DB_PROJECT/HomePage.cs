@@ -15,6 +15,13 @@ namespace DB_PROJECT
         public HomePage()
         {
             InitializeComponent();
+            shopnowButton.Click += goToProducts;
+        }
+
+        private void goToProducts(object sender, EventArgs e) {
+            ProductsForm products = new ProductsForm();
+            products.Show();
+            this.Hide();
         }
 
         private void Form2_Load(object sender, EventArgs e)

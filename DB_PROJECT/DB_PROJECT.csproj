@@ -54,14 +54,14 @@
     <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
       <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.7.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.8.0.0\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="RestSharp, Version=110.2.0.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
-      <HintPath>..\packages\RestSharp.110.2.0\lib\net471\RestSharp.dll</HintPath>
+    <Reference Include="RestSharp, Version=112.1.0.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.112.1.0\lib\net471\RestSharp.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
@@ -84,11 +84,11 @@
     <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
-    <Reference Include="System.Text.Encodings.Web, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Text.Encodings.Web.7.0.0\lib\net462\System.Text.Encodings.Web.dll</HintPath>
+    <Reference Include="System.Text.Encodings.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.8.0.0\lib\net462\System.Text.Encodings.Web.dll</HintPath>
     </Reference>
-    <Reference Include="System.Text.Json, Version=7.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Text.Json.7.0.2\lib\net462\System.Text.Json.dll</HintPath>
+    <Reference Include="System.Text.Json, Version=8.0.0.4, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.8.0.4\lib\net462\System.Text.Json.dll</HintPath>
     </Reference>
     <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
@@ -112,6 +112,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abandoned_Cart_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Abandoned_Cart_Report.Designer.cs">
+      <DependentUpon>Abandoned_Cart_Report.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,11 +130,29 @@
     <Compile Include="BROWSE.Designer.cs">
       <DependentUpon>BROWSE.cs</DependentUpon>
     </Compile>
-    <Compile Include="Cart.cs">
+    <Compile Include="CartForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Cart.Designer.cs">
-      <DependentUpon>Cart.cs</DependentUpon>
+    <Compile Include="CartForm.Designer.cs">
+      <DependentUpon>CartForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_Feedback_and_Product_Rating_Analysis_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_Feedback_and_Product_Rating_Analysis_Report.Designer.cs">
+      <DependentUpon>Customer_Feedback_and_Product_Rating_Analysis_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_Purchase_Behavior_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_Purchase_Behavior_Report.Designer.cs">
+      <DependentUpon>Customer_Purchase_Behavior_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory_Management_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory_Management_Report.Designer.cs">
+      <DependentUpon>Inventory_Management_Report.cs</DependentUpon>
     </Compile>
     <Compile Include="login.cs">
       <SubType>Form</SubType>
@@ -148,6 +172,25 @@
     <Compile Include="LogisticsAndShipping.Designer.cs">
       <DependentUpon>LogisticsAndShipping.cs</DependentUpon>
     </Compile>
+    <Compile Include="Order_Fulfillment_and_Shipping_Efficiency_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Order_Fulfillment_and_Shipping_Efficiency_Report.Designer.cs">
+      <DependentUpon>Order_Fulfillment_and_Shipping_Efficiency_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Platform_Growth_and_User_Engagement_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Platform_Growth_and_User_Engagement_Report.Designer.cs">
+      <DependentUpon>Platform_Growth_and_User_Engagement_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Products.cs" />
+    <Compile Include="ProductsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductsForm.Designer.cs">
+      <DependentUpon>ProductsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="registration.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,11 +199,35 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Revenue_by_Product_Category_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Revenue_by_Product_Category_Report.Designer.cs">
+      <DependentUpon>Revenue_by_Product_Category_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales_Performance_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales_Performance_Report.Designer.cs">
+      <DependentUpon>Sales_Performance_Report.cs</DependentUpon>
+    </Compile>
     <Compile Include="Seller.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Seller.Designer.cs">
       <DependentUpon>Seller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Seller_Performance_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seller_Performance_Report.Designer.cs">
+      <DependentUpon>Seller_Performance_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_Demographic_Insights_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User_Demographic_Insights_Report.Designer.cs">
+      <DependentUpon>User_Demographic_Insights_Report.cs</DependentUpon>
     </Compile>
     <Compile Include="WishList.cs">
       <SubType>Form</SubType>
@@ -169,11 +236,44 @@
       <DependentUpon>WishList.cs</DependentUpon>
     </Compile>
     <None Include="Resources\icons8-wishlist-58.png" />
+    <EmbeddedResource Include="Abandoned_Cart_Report.resx">
+      <DependentUpon>Abandoned_Cart_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_Feedback_and_Product_Rating_Analysis_Report.resx">
+      <DependentUpon>Customer_Feedback_and_Product_Rating_Analysis_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_Purchase_Behavior_Report.resx">
+      <DependentUpon>Customer_Purchase_Behavior_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory_Management_Report.resx">
+      <DependentUpon>Inventory_Management_Report.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LogisticsAndShipping.resx">
       <DependentUpon>LogisticsAndShipping.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Order_Fulfillment_and_Shipping_Efficiency_Report.resx">
+      <DependentUpon>Order_Fulfillment_and_Shipping_Efficiency_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Platform_Growth_and_User_Engagement_Report.resx">
+      <DependentUpon>Platform_Growth_and_User_Engagement_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductsForm.resx">
+      <DependentUpon>ProductsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Revenue_by_Product_Category_Report.resx">
+      <DependentUpon>Revenue_by_Product_Category_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales_Performance_Report.resx">
+      <DependentUpon>Sales_Performance_Report.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Seller.resx">
       <DependentUpon>Seller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seller_Performance_Report.resx">
+      <DependentUpon>Seller_Performance_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User_Demographic_Insights_Report.resx">
+      <DependentUpon>User_Demographic_Insights_Report.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WishList.resx">
       <DependentUpon>WishList.cs</DependentUpon>
@@ -212,8 +312,8 @@
     <EmbeddedResource Include="BROWSE.resx">
       <DependentUpon>BROWSE.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Cart.resx">
-      <DependentUpon>Cart.cs</DependentUpon>
+    <EmbeddedResource Include="CartForm.resx">
+      <DependentUpon>CartForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HomePage.resx">
       <DependentUpon>HomePage.cs</DependentUpon>

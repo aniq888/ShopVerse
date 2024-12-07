@@ -16,7 +16,7 @@ namespace DB_PROJECT
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmregister());
+            Application.Run(new User_Demographic_Insights_Report());
         }
     }
 }

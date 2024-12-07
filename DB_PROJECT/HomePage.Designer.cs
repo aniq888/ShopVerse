@@ -32,13 +32,13 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.NavigationBarMenu = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.DELIVERYADDRESSBUTTON = new System.Windows.Forms.Button();
             this.MYACCOUNTBUTTON = new System.Windows.Forms.Button();
             this.DELIVERYBUTTON = new System.Windows.Forms.Button();
-            this.DELIVERYADDRESSBUTTON = new System.Windows.Forms.Button();
             this.WISHLISTbutton = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.MYORDERSbutton = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NavigationBarMenu)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
@@ -50,7 +50,7 @@
             this.shopnowButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.shopnowButton.Font = new System.Drawing.Font("Sitka Small", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.shopnowButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.shopnowButton.Location = new System.Drawing.Point(672, 495);
+            this.shopnowButton.Location = new System.Drawing.Point(613, 498);
             this.shopnowButton.Name = "shopnowButton";
             this.shopnowButton.Size = new System.Drawing.Size(285, 119);
             this.shopnowButton.TabIndex = 0;
@@ -64,7 +64,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1458, 45);
+            this.panel1.Size = new System.Drawing.Size(1386, 45);
             this.panel1.TabIndex = 1;
             // 
             // NavigationBarMenu
@@ -92,18 +92,32 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 673);
             this.flowLayoutPanel1.TabIndex = 2;
             // 
-            // button2
+            // button1
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(80)))), ((int)(((byte)(160)))));
-            this.button2.BackgroundImage = global::DB_PROJECT.Properties.Resources._61d387f20082ce08d6a3c612_shopverse_img01;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button2.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button2.Location = new System.Drawing.Point(3, 476);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(197, 197);
-            this.button2.TabIndex = 8;
-            this.button2.UseVisualStyleBackColor = false;
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(80)))), ((int)(((byte)(160)))));
+            this.button1.BackgroundImage = global::DB_PROJECT.Properties.Resources._61d387f20082ce08d6a3c612_shopverse_img01;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button1.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button1.Location = new System.Drawing.Point(3, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(197, 193);
+            this.button1.TabIndex = 10;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // DELIVERYADDRESSBUTTON
+            // 
+            this.DELIVERYADDRESSBUTTON.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(80)))), ((int)(((byte)(160)))));
+            this.DELIVERYADDRESSBUTTON.BackgroundImage = global::DB_PROJECT.Properties.Resources.Purple_Blue_Simple_Daily_Motivation_Quote_Instagram_Post;
+            this.DELIVERYADDRESSBUTTON.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.DELIVERYADDRESSBUTTON.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DELIVERYADDRESSBUTTON.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.DELIVERYADDRESSBUTTON.Location = new System.Drawing.Point(3, 202);
+            this.DELIVERYADDRESSBUTTON.Name = "DELIVERYADDRESSBUTTON";
+            this.DELIVERYADDRESSBUTTON.Size = new System.Drawing.Size(197, 61);
+            this.DELIVERYADDRESSBUTTON.TabIndex = 7;
+            this.DELIVERYADDRESSBUTTON.Text = "DELIVERY ADDRESS";
+            this.DELIVERYADDRESSBUTTON.UseVisualStyleBackColor = false;
             // 
             // MYACCOUNTBUTTON
             // 
@@ -134,20 +148,6 @@
             this.DELIVERYBUTTON.Text = "DELIVERY ADDRESS";
             this.DELIVERYBUTTON.UseVisualStyleBackColor = false;
             // 
-            // DELIVERYADDRESSBUTTON
-            // 
-            this.DELIVERYADDRESSBUTTON.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(80)))), ((int)(((byte)(160)))));
-            this.DELIVERYADDRESSBUTTON.BackgroundImage = global::DB_PROJECT.Properties.Resources.Purple_Blue_Simple_Daily_Motivation_Quote_Instagram_Post;
-            this.DELIVERYADDRESSBUTTON.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.DELIVERYADDRESSBUTTON.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DELIVERYADDRESSBUTTON.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.DELIVERYADDRESSBUTTON.Location = new System.Drawing.Point(3, 202);
-            this.DELIVERYADDRESSBUTTON.Name = "DELIVERYADDRESSBUTTON";
-            this.DELIVERYADDRESSBUTTON.Size = new System.Drawing.Size(197, 61);
-            this.DELIVERYADDRESSBUTTON.TabIndex = 7;
-            this.DELIVERYADDRESSBUTTON.Text = "DELIVERY ADDRESS";
-            this.DELIVERYADDRESSBUTTON.UseVisualStyleBackColor = false;
-            // 
             // WISHLISTbutton
             // 
             this.WISHLISTbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(80)))), ((int)(((byte)(160)))));
@@ -161,19 +161,6 @@
             this.WISHLISTbutton.TabIndex = 9;
             this.WISHLISTbutton.Text = "MY WISH LIST";
             this.WISHLISTbutton.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(80)))), ((int)(((byte)(160)))));
-            this.button1.BackgroundImage = global::DB_PROJECT.Properties.Resources._61d387f20082ce08d6a3c612_shopverse_img01;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button1.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button1.Location = new System.Drawing.Point(3, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(197, 193);
-            this.button1.TabIndex = 10;
-            this.button1.UseVisualStyleBackColor = false;
             // 
             // MYORDERSbutton
             // 
@@ -190,6 +177,19 @@
             this.MYORDERSbutton.UseVisualStyleBackColor = false;
             this.MYORDERSbutton.Click += new System.EventHandler(this.button3_Click);
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(80)))), ((int)(((byte)(160)))));
+            this.button2.BackgroundImage = global::DB_PROJECT.Properties.Resources._61d387f20082ce08d6a3c612_shopverse_img01;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button2.Font = new System.Drawing.Font("Sitka Small", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button2.Location = new System.Drawing.Point(3, 476);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(197, 197);
+            this.button2.TabIndex = 8;
+            this.button2.UseVisualStyleBackColor = false;
+            // 
             // HomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -197,7 +197,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(116)))), ((int)(((byte)(86)))), ((int)(((byte)(174)))));
             this.BackgroundImage = global::DB_PROJECT.Properties.Resources._61d387f20082ce08d6a3c612_shopverse_img01;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1458, 718);
+            this.ClientSize = new System.Drawing.Size(1386, 718);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.shopnowButton);
